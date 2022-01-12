@@ -73,7 +73,8 @@ jobs:
           log_level: WARNING # optional: set log level. Default WARNING
           
       - name: Deploy evilpetclinic app
-        run: bash files/exec.sh deploy.sh
+        run: echo deploying application... ; sleep 3 
+        #bash files/exec.sh deploy.sh
         
       - name: Runtime attacks
         run: bash files/exec.sh runtime_attacks.sh
